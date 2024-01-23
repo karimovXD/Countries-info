@@ -16,7 +16,41 @@
     }
 
     body {
-        text-transform: capitalize;
         font-family: 'Roboto';
+        background: rgb(242, 242, 242);
+    }
+
+    .true {
+        background: #24282c;
+        color: #fff;
+
+        header {
+            nav {
+                background: #343a40;
+            }
+
+            div {
+                div {
+                    background: #343a40;
+                    color: #fff;
+
+                    input {
+                        background: #343a40;
+                    }
+
+                    select {
+                        background: #343a40;
+                    }
+                }
+            }
+        }
+
+        main {
+            div {
+                div {
+                    background: #343a40;
+                }
+            }
+        }
     }
 }

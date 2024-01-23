@@ -12,7 +12,8 @@ import All from './pages/All'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  
+  //route
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <Route element={<RootLayout />}>
