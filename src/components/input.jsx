@@ -1,9 +1,14 @@
-import React from 'react'
+//import { useState, useEffect } from "react"
 
-function input() {
-  return (
-    <div>input</div>
-  )
-}
+//function Input(input) {
+//  const [targetInput, setTargetInput] = useState('')
 
-export default input
+//  return (
+//    <div className="h-8 bg-white px-2 mb-10 shadow-md rounded ">
+//      <span className="mr-2"><i className="fa-solid fa-magnifying-glass"></i></span>
+//      <input type="text" className="w-4/5 md:w-80 h-full outline-none" onChange={e => setTargetInput(e.target.value)} />
+//    </div>
+//  )
+//}
+
+//export default Input
