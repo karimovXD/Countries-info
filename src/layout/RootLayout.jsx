@@ -1,11 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { NavLink, Outlet } from "react-router-dom";
-
 //components
-import Mode from "../components/Mode"; 
+import Mode from "../components/Mode";
 import Filter from "../components/Filter";
-
-//state
+import Input from "../components/Input";
 
 function RootLayout() {
 
@@ -19,6 +17,7 @@ function RootLayout() {
                     </div>
                 </nav>
                 <div className="h-auto mb-10 px-8 xxl:container xxl:px-20 md:flex justify-between xxl:m-auto">
+                    <Input />
                     <Filter />
                 </div>
             </header>

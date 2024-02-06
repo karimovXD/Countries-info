@@ -11,7 +11,7 @@ function Mode() {
     return (
         <div className="flex items-center cursor-pointer select-none" onClick={() => setHandleToggle(!handleToggle)}>
             <span><i className="fa-regular fa-moon"></i> {/*<i className="fa-solid fa-sun"></i>*/}</span>
-            <h3 className="text-md font-medium ml-2">Dark Mode</h3>
+            <h3 className="text-md font-light ml-2">Dark Mode</h3>
         </div>
     )
 }

@@ -1,28 +1,33 @@
-import React from 'react'
+import { useState, useContext } from 'react';
+import Select from 'react-select'
+import { FilterContext } from '../context/MyContext';
 
 function Filter() {
-    const handleSelect = (e) => {
-        const select = e.target.value;
-        window.location.href = select;
-    }
+    //context
+    const { filterV, setFilterV } = useContext(FilterContext);
 
-{/*<NavLink to="/">All</NavLink>
-<NavLink to="/Asia">Asia</NavLink>
-<NavLink to="/Africa">Africa</NavLink>
-<NavLink to="/Europe">Europe</NavLink>*/}
 
+    //select-options
+    const options = [
+        { value: '', label: 'All' },
+        { value: 'Africa', label: 'Africa' },
+        { value: 'America', label: 'America' },
+        { value: 'Asia', label: 'Asia' },
+        { value: 'Europe', label: 'Europe' },
+        { value: 'Oceania', label: 'Oceania' },
+    ];
+
+    //render
     return (
-        <div className="w-40 h-8 md:w-auto">
-            <select className="w-40 h-8 px-1 shadow-md rounded" onChange={handleSelect}>
-                <option>Select Region</option>
-                <option value="/">All</option>
-                <option value="/Asia">Asia</option>
-                <option value="/Africa">Africa</option>
-                <option value="/America">America</option>
-                <option value="/Europe">Europe</option>
-            </select>
+        <div className="h-11 md:w-auto flex items-center md:justify-center rounded-md">
+            <Select
+                className="w-full md:w-auto px-1 rounded"
+                id='select'
+                options={options}
+                placeholder="Filter by Region"
+                onChange={(e) => setFilterV(e.value)}
+            />
         </div>
     )
 }
-
 export default Filter

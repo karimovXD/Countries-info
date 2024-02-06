@@ -22,7 +22,7 @@
 
     .true {
         background: #24282c;
-        color: #fff;
+        color: #fff !important;
 
         header {
             nav {
@@ -32,13 +32,18 @@
             div {
                 div {
                     background: #343a40;
-                    color: #fff;
+                    color: #fff !important;
+                    border: none;
 
                     input {
                         background: #343a40;
                     }
+                }
 
-                    select {
+                #input {
+                    background: #343a40;
+
+                    input {
                         background: #343a40;
                     }
                 }
@@ -46,17 +51,22 @@
         }
 
         main {
-            #input {
-                background: #343a40;
-
-                input {
-                    background: #343a40;
-                }
-            }
 
             div {
+                a {
+                    background: #343a40;
+
+                    div {
+                        background: #343a40;
+                    }
+                }
+
                 div {
                     background: #343a40;
+
+                    div {
+                        background: #343a40;
+                    }
                 }
             }
         }
