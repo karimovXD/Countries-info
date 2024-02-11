@@ -10,13 +10,21 @@ import { SkeletonTheme } from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
 //component
+import Filter from "../components/Filter";
+import Input from "../components/Input";
+
+//component
 function All() {
 
+  //sort-API https://restcountries.com/v3.1/all?fields=name,capital,flags,population,region
+
   //hooks
-  const [allURL, setAllURL] = useState('https://restcountries.com/v3.1/all?fields=name,capital,flags,population,region');
+  const [allURL, setAllURL] = useState('https://restcountries.com/v3.1/all');
   const [allCountries, setAllCountries] = useState();
+  //context
   const searchItem = useContext(SearchContext);
   const filterItem = useContext(FilterContext);
+  //loader
   const [isLoading, setIsLoading] = useState(true)
 
   //useEffect
@@ -29,6 +37,10 @@ function All() {
   //render  
   return (
     <>
+      <div className="h-auto mb-10 px-8 xxl:container xxl:px-20 md:flex justify-between xxl:m-auto">
+        <Input />
+        <Filter />
+      </div>
       <div className="flex-wrap h-auto mb-10 px-8 xxl:container xxl:px-20 md:flex xxl:m-auto justify-between gap-14">
         <SkeletonTheme baseColor="rgb(203, 203, 203)" highlightColor="#e8ffd1">
           {
@@ -53,7 +65,7 @@ function All() {
                 }
               }).map((item, i) => {
                 return (
-                  <NavLink to="/About" key={i} className="bg-white">
+                  <NavLink to={'/Country/' + item.name.common} key={i} className="bg-white">
                     <div className="w-full h-auto mb-14 p-5 text-center flex flex-col items-center justify-center sm:p-0 sm:text-left sm:justify-start sm:m-0 sm:w-auto sm:h-auto cursor-pointer">
                       <div className="w-64 h-36"><img src={item.flags.png} alt="" className="w-full h-full" /></div>
                       <div className="w-64 h-full px-5 py-6">

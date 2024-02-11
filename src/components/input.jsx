@@ -2,7 +2,7 @@ import { useState, useContext } from "react"
 //context
 import { SearchContext } from "../context/MyContext"
 
-function Input() { 
+function Input() {
     const { searchAll, setSearchAll } = useContext(SearchContext);
 
     return (

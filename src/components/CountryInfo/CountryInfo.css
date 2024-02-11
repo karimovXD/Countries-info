@@ -1,0 +1,32 @@
+#about-div {
+  background: fixed;
+}
+#about-div div {
+  background: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+#about-div div ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 8px 0;
+}
+#about-div div ul h3 {
+  font-weight: 500;
+  padding: 0 9px 0 0;
+}
+#about-div div ul p {
+  font-weight: 300;
+  color: #838383;
+}
+
+#global-div {
+  background: fixed;
+}
+
+#flag {
+  background: fixed;
+}/*# sourceMappingURL=CountryInfo.css.map */

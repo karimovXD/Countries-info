@@ -16,10 +16,6 @@ function RootLayout() {
                         <Mode />
                     </div>
                 </nav>
-                <div className="h-auto mb-10 px-8 xxl:container xxl:px-20 md:flex justify-between xxl:m-auto">
-                    <Input />
-                    <Filter />
-                </div>
             </header>
             <main>
                 <Outlet />

@@ -5,7 +5,7 @@ import { SearchContext, FilterContext } from './context/MyContext'
 
 
 //pages
-import About from './pages/About'
+import Country from './pages/Country'
 import Error from './pages/Error'
 import All from './pages/All'
 
@@ -20,7 +20,7 @@ function App() {
     createRoutesFromElements(
       <Route element={<RootLayout />}>
         <Route path='/' element={<All />} />
-        <Route path='/About' element={<About />} />
+        <Route path='/Country/:name' element={<Country />} />
         <Route path='/Error' element={<Error />} />
       </Route>
     )

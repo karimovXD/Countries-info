@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* a {
+  text-decoration: none;
+}
+* li {
+  list-style: none;
+}
+* body {
+  font-family: "Roboto";
+  background: rgb(242, 242, 242);
+}
+* .true {
+  background: #24282c;
+  color: #fff !important;
+}
+* .true header nav {
+  background: #343a40;
+}
+* .true main div a {
+  background: #343a40;
+}
+* .true main div a div {
+  background: #343a40;
+}
+* .true main div div {
+  background: #343a40;
+}
+* .true main div div div {
+  background: #343a40;
+}
+* .true main div div {
+  background: #343a40;
+  color: #fff !important;
+  border: none;
+}
+* .true main div div input {
+  background: #343a40;
+}
+* .true main div #input {
+  background: #343a40;
+}
+* .true main div #input input {
+  background: #343a40;
+}/*# sourceMappingURL=index.css.map */
