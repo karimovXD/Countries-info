@@ -6,7 +6,7 @@ function CountryInfo(country) {
     console.log(country);
 
     return (
-        <div className="flex-wrap flex-col h-auto px-8 xxl:container xxl:px-20 md:flex xxl:m-auto justify-left lg:flex-row">
+        <div className="flex-wrap flex-col h-auto px-8 xxl:container xxl:px-20 md:flex xxl:m-auto lg:justify-start lg:flex-row">
             <div className="w-full mr-10 h-auto mb-8 lg:mb-0 lg:w-auto" id='flag'><img src={country.country.flags.png} alt="" className="w-96" /></div>
             <div className='w-full h-auto flex flex-col items-left justify-center lg:w-3/6' id='global-div'>
                 <h1 className="font-bold text-5xl text-left mb-5">{country.country.name.common}</h1>
@@ -48,7 +48,9 @@ function CountryInfo(country) {
                         </ul>
                     </div>
                 </div>
-                <div className=""></div>
+                <div className="">
+                    
+                </div>
             </div>
         </div>
     )
