@@ -1,9 +1,7 @@
-import { useState, useEffect, useContext } from "react";
+import react from "react";
 import { NavLink, Outlet } from "react-router-dom";
 //components
 import Mode from "../components/Mode";
-import Filter from "../components/Filter";
-import Input from "../components/Input";
 
 function RootLayout() {
 
